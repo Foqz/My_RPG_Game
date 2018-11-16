@@ -1,0 +1,14 @@
+*.pidb
+*.userprefs
+*.suo
+.DS_Store
+obj
+Temp
+*.booproj
+*.db
+*/Library/
+*/.idea/
+*.csproj
+*.sln
+*.bck*
+*/.vscode/
