@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour {
 
     public static PlayerController instance;
 
+    public string areaTransitionName;
+
 	// Use this for initialization
 	void Start () {
         if (instance == null)
@@ -20,8 +22,6 @@ public class PlayerController : MonoBehaviour {
         {
             Destroy(gameObject);
         }
-        
-
         DontDestroyOnLoad(gameObject);
 	}
 	
@@ -37,6 +37,5 @@ public class PlayerController : MonoBehaviour {
             myAnim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
             myAnim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
         }
-
 	}
 }
